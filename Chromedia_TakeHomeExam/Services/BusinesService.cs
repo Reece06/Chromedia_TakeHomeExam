@@ -64,7 +64,7 @@ namespace Chromedia_TakeHomeExam.Services
                     }) 
                     //Sort by Number of Comments then by Title
                     .OrderByDescending(x => x.comments)
-                    .ThenBy(x => x.title)
+                    .ThenByDescending(x => x.title)
                     //Take the limit
                     .Take(limit)
                     //get the titles
